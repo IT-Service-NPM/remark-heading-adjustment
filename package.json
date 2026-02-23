@@ -5,7 +5,8 @@
 	"description": "This Remark plugin helps to adjust headings depth in markdown file",
 	"keywords": [
 		"markdown",
-		"directive",
+		"heading",
+		"depth",
 		"mdast-plugin",
 		"remark-plugin"
 	],

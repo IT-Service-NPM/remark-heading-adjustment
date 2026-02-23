@@ -14,6 +14,14 @@ import { visit } from 'unist-util-visit';
 
 declare module 'unified' {
   interface Data {
+    /**
+     * When `processor.data().topHeadingDepth` is specified,
+     * plugin '@it-service-npm/remark-heading-adjustment'
+     * adjusts all headings so
+     * that the depth of the top heading aligns with the given value.
+     *
+     * @public
+     */
     topHeadingDepth?: number
   }
 };
