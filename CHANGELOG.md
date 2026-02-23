@@ -24,3 +24,15 @@ All notable changes to this project will be documented in this file. See
 ### BREAKING CHANGES
 
 * first release
+
+# 1.0.0 (2026-02-23)
+
+
+### Features
+
+* adjust headings depth ([d1ce540](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/d1ce540d896923532fe9749f7d5efc8c5c4cee35))
+
+
+### BREAKING CHANGES
+
+* first release
