@@ -28,10 +28,11 @@ declare module 'unified' {
 
   interface Settings {
     /**
-     * When `processor.data().topHeadingDepth` is specified,
-     * plugin '@it-service-npm/remark-heading-adjustment'
+     * When `processor.data().topHeadingDepth` is not specified,
+     * plugin
      * adjusts all headings so
-     * that the depth of the top heading aligns with the given value.
+     * that the depth of the top heading aligns with the
+     * `processor.data().settings.topHeadingDepth`.
      *
      * @public
      */
