@@ -13,6 +13,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.0.0...v1.1.0) (2026-02-24)
+
+
+### Features
+
+* accept topHeadingDepth from settings ([386852f](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/386852ff41a8cebdf6a1528625bf73b1241ef20d))
+
 # 1.0.0 (2026-02-23)
 
 ### Features
