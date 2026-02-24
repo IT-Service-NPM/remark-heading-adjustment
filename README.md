@@ -70,6 +70,7 @@ the plugin remains inactive.
     - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
     - [Does nothing if `topHeadingDepth` is not specified](#does-nothing-if-topheadingdepth-is-not-specified)
     - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
+    - [Adjust top heading depth to H1](#adjust-top-heading-depth-toh1)
   - [API](#api)
   - [License](#license)
 
@@ -290,6 +291,70 @@ Text 2.
 Text 3.
 
 ## header 4 (depth 2)
+
+Text 4.
+
+```
+
+### Adjust top heading depth to H1
+
+This plugin works with remark CLI to standardize heading levels,
+ensuring that the top-level heading depth is always 1.
+
+.remarkrc.mjs:
+
+```javascript file=test/examples/04/.remarkrc.mjs
+import {
+  remarkAdjustTopHeadingToH1
+} from '@it-service-npm/remark-heading-adjustment';
+
+export default {
+  plugins: [
+    remarkAdjustTopHeadingToH1
+  ]
+}
+
+```
+
+Source files:
+
+main.md:
+
+```markdown file=test/examples/04/fixtures/main.md
+## top level header
+
+Text 1.
+
+### header 2
+
+Text 2.
+
+#### header 3
+
+Text 3.
+
+### header 4
+
+Text 4.
+
+```
+
+Remark output:
+
+```markdown file=test/examples/04/snapshots/output.md
+# top level header
+
+Text 1.
+
+## header 2
+
+Text 2.
+
+### header 3
+
+Text 3.
+
+## header 4
 
 Text 4.
 

@@ -21,6 +21,7 @@ export async function remarkUsingExample(
     .use(remarkHeadingsAdjustment)
     .process(await vFile.read(filePath));
 };
+
 ```
 
 Source files:
@@ -43,6 +44,7 @@ Text 3.
 ## header 4 (depth 2)
 
 Text 4.
+
 ```
 
 Remark output:
@@ -63,4 +65,5 @@ Text 3.
 ## header 4 (depth 2)
 
 Text 4.
+
 ```

@@ -36,3 +36,29 @@ If `processor.data().topHeadingDepth` is not set, the plugin remains inactive.
 </td></tr>
 </tbody></table>
 
+## Variables
+
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[remarkAdjustTopHeadingToH1](./remark-heading-adjustment.remarkadjusttopheadingtoh1.md)
+
+
+</td><td>
+
+Preset of Remark plugin [remarkHeadingsAdjustment()](./remark-heading-adjustment.remarkheadingsadjustment.md) and settings `{ topHeadingDepth: 1 }` for using in .remarkrc and normalization top level heading depth
+
+
+</td></tr>
+</tbody></table>
+

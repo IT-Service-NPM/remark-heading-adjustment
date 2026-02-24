@@ -4,8 +4,12 @@
 
 ```ts
 
+import type { Preset } from 'unified';
 import type { Processor } from 'unified';
 import type { Transformer } from 'unified';
+
+// @public
+export const remarkAdjustTopHeadingToH1: Preset;
 
 // @public
 export function remarkHeadingsAdjustment(this: Processor): Transformer;

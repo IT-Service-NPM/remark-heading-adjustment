@@ -4,7 +4,7 @@
  * @packageDocumentation
  */
 
-import type { Transformer, Processor } from 'unified';
+import type { Transformer, Processor, Preset } from 'unified';
 import type {
   Node,
   Heading
@@ -77,4 +77,26 @@ export function remarkHeadingsAdjustment(
     return tree;
   };
 
+};
+
+/**
+ * Preset of Remark plugin
+ * {@link remarkHeadingsAdjustment}
+ * and settings `{ topHeadingDepth: 1 }`
+ * for using in .remarkrc
+ * and normalization top level heading depth
+ *
+ * @remarks
+ *
+ * @see {@link remarkHeadingsAdjustment},
+ *
+ * @public
+ */
+export const remarkAdjustTopHeadingToH1: Preset = {
+  plugins: [
+    remarkHeadingsAdjustment
+  ],
+  settings: {
+    topHeadingDepth: 1
+  }
 };
