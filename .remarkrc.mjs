@@ -29,6 +29,7 @@ export default {
     removeComments
   ],
   settings: {
-    bullet: '-'
+    bullet: '-',
+    topHeadingDepth: 1
   }
 }

@@ -1,0 +1,19 @@
+import { remark } from 'remark';
+import * as vFile from 'to-vfile';
+import {
+  remarkHeadingsAdjustment
+} from '@it-service-npm/remark-heading-adjustment';
+import type { VFile } from 'vfile';
+
+export async function remarkUsingExample(
+  filePath: string
+): Promise<VFile> {
+  return remark()
+    .use({
+      plugins: [remarkHeadingsAdjustment],
+      settings: {
+        topHeadingDepth: 1
+      }
+    })
+    .process(await vFile.read(filePath));
+};

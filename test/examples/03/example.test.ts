@@ -6,7 +6,7 @@ const testSnapshotsFilesPath: string = path.join(__dirname, 'snapshots');
 
 describe('remark-heading-adjustment', () => {
 
-  it('adjusts all headings if topHeadingDepth is specified,', async () => {
+  it('accepts topHeadingDepth from settings', async () => {
     const _cwd = process.cwd();
     try {
       process.chdir(__dirname);
