@@ -1,7 +1,11 @@
 # Adjust top heading depth to H1
 
-This plugin works with remark CLI to standardize heading levels,
-ensuring that the top-level heading depth is always 1.
+The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
+This preset includes the `remarkHeadingsAdjustment` plugin
+with settings `{topHeadingDepth: 1}`.
+
+These are meant for use in .remarkrc files
+and help normalize the depth of the top-level heading.
 
 .remarkrc.mjs:
 

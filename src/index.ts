@@ -80,11 +80,12 @@ export function remarkHeadingsAdjustment(
 };
 
 /**
- * Preset of Remark plugin
- * {@link remarkHeadingsAdjustment}
- * and settings `{ topHeadingDepth: 1 }`
- * for using in .remarkrc
- * and normalization top level heading depth
+ * The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
+ * This preset includes the {@link remarkHeadingsAdjustment} plugin
+ * with settings `{topHeadingDepth: 1}`.
+ *
+ * These are meant for use in .remarkrc files
+ * and help normalize the depth of the top-level heading.
  *
  * @remarks
  *

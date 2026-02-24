@@ -56,7 +56,9 @@ Description
 
 </td><td>
 
-Preset of Remark plugin [remarkHeadingsAdjustment()](./remark-heading-adjustment.remarkheadingsadjustment.md) and settings `{ topHeadingDepth: 1 }` for using in .remarkrc and normalization top level heading depth
+The plugin exports a preset called `remarkAdjustTopHeadingToH1`<!-- -->. This preset includes the [remarkHeadingsAdjustment()](./remark-heading-adjustment.remarkheadingsadjustment.md) plugin with settings `{topHeadingDepth: 1}`<!-- -->.
+
+These are meant for use in .remarkrc files and help normalize the depth of the top-level heading.
 
 
 </td></tr>
