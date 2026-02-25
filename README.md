@@ -87,7 +87,7 @@ npm install --save-dev @it-service-npm/remark-heading-adjustment
 help to adjust headings depth in markdown document.
 
 When `processor.data().topHeadingDepth` is specified,
-this plugin adjusts all headings (shift they up or down) so
+this plugin adjusts all headings (by shifting them up or down) so
 that the depth of the top heading aligns with the given value.
 
 ```typescript file=test/examples/01/example.ts
