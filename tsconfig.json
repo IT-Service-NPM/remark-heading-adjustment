@@ -6,11 +6,13 @@
 	],
 	"references": [
 		{
-			"path": "./tsconfig.src.json"
-		}
+			"path": "./tsconfig.src.json",
+		},
+		// {
+		// 	"path": "./tsconfig.test.json"
+		// }
 	],
 	"compilerOptions": {
-		"tsBuildInfoFile": "./temp/tsconfig.tsbuildinfo",
 		"noEmit": true,
 		"allowImportingTsExtensions": true,
 		"esModuleInterop": true,
@@ -41,9 +43,7 @@
 			],
 		},
 		"types": [
-			"node",
-			"vitest/globals",
-			"@altano/vitest-plugins/matchers"
+			"node"
 		],
-	}
+	},
 }

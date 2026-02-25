@@ -44,7 +44,7 @@
 
 [build-url]: https://github.com/IT-Service-NPM/remark-heading-adjustment/actions/workflows/ci.yml
 
-[tests]: https://img.shields.io/endpoint?logo=vitest&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fremark-heading-adjustment-junit-tests.json
+[tests]: https://img.shields.io/endpoint?logo=node.js&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fremark-heading-adjustment-junit-tests.json
 
 [tests-url]: https://github.com/IT-Service-NPM/remark-heading-adjustment/actions/workflows/ci.yml
 
@@ -68,7 +68,6 @@ the plugin remains inactive.
   - [Install](#install)
   - [Examples](#examples)
     - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
-    - [Does nothing if `topHeadingDepth` is not specified](#does-nothing-if-topheadingdepth-is-not-specified)
     - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
     - [Adjust top heading depth to H1](#adjust-top-heading-depth-toh1)
   - [API](#api)
@@ -154,75 +153,8 @@ Text 4.
 
 ```
 
-### Does nothing if `topHeadingDepth` is not specified
-
-`@it-service-npm/remark-heading-adjustment` can
-help to adjust headings depth in markdown document.
-
 Without additional `processor` or `file` data
 this plugin does nothing.
-
-```typescript file=test/examples/02/example.ts
-import { remark } from 'remark';
-import * as vFile from 'to-vfile';
-import {
-  remarkHeadingsAdjustment
-} from '@it-service-npm/remark-heading-adjustment';
-import type { VFile } from 'vfile';
-
-export async function remarkUsingExample(
-  filePath: string
-): Promise<VFile> {
-  return remark()
-    .use(remarkHeadingsAdjustment)
-    .process(await vFile.read(filePath));
-};
-
-```
-
-Source files:
-
-main.md:
-
-```markdown file=test/examples/02/fixtures/main.md
-# main header (depth 1)
-
-Text 1.
-
-## header 2 (depth 2)
-
-Text 2.
-
-### header 3 (depth 3)
-
-Text 3.
-
-## header 4 (depth 2)
-
-Text 4.
-
-```
-
-Remark output:
-
-```markdown file=test/examples/02/snapshots/output.md
-# main header (depth 1)
-
-Text 1.
-
-## header 2 (depth 2)
-
-Text 2.
-
-### header 3 (depth 3)
-
-Text 3.
-
-## header 4 (depth 2)
-
-Text 4.
-
-```
 
 ### Adjustment headings depth when `topHeadingDepth` specified in settings
 

@@ -66,3 +66,6 @@ Text 3.
 
 Text 4.
 ```
+
+Without additional `processor` or `file` data
+this plugin does nothing.
