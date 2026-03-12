@@ -50,6 +50,7 @@
 		"update-readme": "npm run update-examples-readme && npm run update-main-readme",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 	},
+	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
 		"remark": "^15.0.1",
 		"unist-util-visit": "^5.1.0"
