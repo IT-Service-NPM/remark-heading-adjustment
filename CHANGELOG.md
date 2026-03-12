@@ -13,6 +13,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.0...v1.2.1) (2026-03-12)
+
+
+### Bug Fixes
+
+* set `packageManager` in package.json ([d2f0259](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/d2f02594db851de7c43c4c83271d1d75c791a5d2))
+
 # [1.2.0](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.1.0...v1.2.0) (2026-02-24)
 
 ### Features
