@@ -1,5 +1,27 @@
 <!-- markdownlint-configure-file
 {
+  'default': true,
+  'line-length': false,
+  'no-duplicate-heading': false,
+  'no-multiple-blanks': false,
+  'heading-increment': false,
+  'single-title': false
+}
+-->
+# 📓 Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.2.2](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.1...v1.2.2) (2026-03-12)
+
+
+### Bug Fixes
+
+* fix semantic-release config ([03043c8](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/03043c8a95b0f8a8371c7e690c55f3b8c335812f))
+
+<!-- markdownlint-configure-file
+{
   "default": true,
   "line-length": false,
   "no-duplicate-heading": false,
