@@ -13,6 +13,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.2...v1.2.3) (2026-04-12)
+
+
+### Bug Fixes
+
+* fix remark CLI error with `--use` option ([7bf86b7](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/7bf86b7096bade567ef177ac7785728296409597))
+
 ## [1.2.2](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.1...v1.2.2) (2026-03-12)
 
 
