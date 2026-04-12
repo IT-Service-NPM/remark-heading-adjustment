@@ -9,7 +9,9 @@ import type { Processor } from 'unified';
 import type { Transformer } from 'unified';
 
 // @public
-export const remarkAdjustTopHeadingToH1: Preset;
+const remarkAdjustTopHeadingToH1: Preset;
+export default remarkAdjustTopHeadingToH1;
+export { remarkAdjustTopHeadingToH1 }
 
 // @public
 export function remarkHeadingsAdjustment(this: Processor): Transformer;

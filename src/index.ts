@@ -101,3 +101,5 @@ export const remarkAdjustTopHeadingToH1: Preset = {
     topHeadingDepth: 1
   }
 };
+
+export default remarkAdjustTopHeadingToH1;
