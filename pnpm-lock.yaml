@@ -20,7 +20,7 @@ importers:
         version: 20.5.0(@types/node@25.6.0)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@commitlint/config-angular':
         specifier: ^20.5.0
-        version: 20.5.0
+        version: 20.5.3
       '@commitlint/config-conventional':
         specifier: ^20.5.0
         version: 20.5.0
@@ -164,8 +164,8 @@ packages:
     resolution: {integrity: sha512-6HAMnXyUl3EUBgECjvfLzlghbkMfZx28YBPDry3pPWR0+xpzqSbUY19VIkmdetqYKeawFViudvkqD4VH93gKKg==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-angular@20.5.0':
-    resolution: {integrity: sha512-AZ8foxHb8VBCpZywnIFxpXgrK6VMizZ957vlz8UEyaMZEzvP0F+RtQmTijHnVPaPVk/scS6EDp0/1sy1UszXoQ==}
+  '@commitlint/config-angular@20.5.3':
+    resolution: {integrity: sha512-j0TTWt4EKyC15cKZi4ebYlzKsbcaGUKfZ8FLEDaaSiGhXY0sCoqMu9K3NPYRB/qQuygduLjEnWKE3X028JP+Gw==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-conventional@20.5.0':
@@ -2595,7 +2595,7 @@ snapshots:
 
   '@commitlint/config-angular-type-enum@20.0.0': {}
 
-  '@commitlint/config-angular@20.5.0':
+  '@commitlint/config-angular@20.5.3':
     dependencies:
       '@commitlint/config-angular-type-enum': 20.0.0
 
