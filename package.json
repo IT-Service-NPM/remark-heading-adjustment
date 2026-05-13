@@ -53,7 +53,6 @@
 	"packageManager": "pnpm@10.30.3",
 	"dependencies": {
 		"remark": "^15.0.1",
-		"remark-directive": "^4.0.0",
 		"unist-util-visit": "^5.1.0"
 	},
 	"devDependencies": {
@@ -87,6 +86,7 @@
 		"mdast-util-directive": "^3.1.0",
 		"remark-cli": "^12.0.1",
 		"remark-code-import": "^1.2.0",
+		"remark-directive": "^4.0.0",
 		"remark-gfm": "^4.0.1",
 		"remark-license": "^6.1.0",
 		"remark-lint-code-block-style": "^4.0.1",
