@@ -63,15 +63,13 @@ the plugin remains inactive.
 
 ## Contents
 
-- [@it-service-npm/remark-heading-adjustment Remark plugin](#it-service-npmremark-heading-adjustment-remark-plugin)
-  - [Contents](#contents)
-  - [Install](#install)
-  - [Examples](#examples)
-    - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
-    - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
-    - [Adjust top heading depth to H1](#adjust-top-heading-depth-toh1)
-  - [API](#api)
-  - [License](#license)
+- [Install](#install)
+- [Examples](#examples)
+  - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
+  - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
+  - [Adjust top heading depth to H1](#adjust-top-heading-depth-toh1)
+- [API](#api)
+- [License](#license)
 
 ## Install
 
@@ -90,7 +88,7 @@ When `processor.data().topHeadingDepth` is specified,
 this plugin adjusts all headings (by shifting them up or down) so
 that the depth of the top heading aligns with the given value.
 
-```typescript file=test/examples/01/example.ts
+```typescript
 import { remark } from 'remark';
 import * as vFile from 'to-vfile';
 import {
@@ -106,14 +104,13 @@ export async function remarkUsingExample(
     .use(remarkHeadingsAdjustment)
     .process(await vFile.read(filePath));
 };
-
 ```
 
 Source files:
 
 main.md:
 
-```markdown file=test/examples/01/fixtures/main.md
+```markdown
 # main header (depth 1)
 
 Text 1.
@@ -129,12 +126,11 @@ Text 3.
 ## header 4 (depth 2)
 
 Text 4.
-
 ```
 
 Remark output:
 
-```markdown file=test/examples/01/snapshots/output.md
+```markdown
 ### main header (depth 1)
 
 Text 1.
@@ -150,7 +146,6 @@ Text 3.
 #### header 4 (depth 2)
 
 Text 4.
-
 ```
 
 Without additional `processor` or `file` data
@@ -161,7 +156,7 @@ this plugin does nothing.
 When `processor.data().topHeadingDepth` is not specified,
 this plugin accepts `topHeadingDepth` from settings.
 
-```typescript file=test/examples/03/example.ts
+```typescript
 import { remark } from 'remark';
 import * as vFile from 'to-vfile';
 import {
@@ -181,14 +176,13 @@ export async function remarkUsingExample(
     })
     .process(await vFile.read(filePath));
 };
-
 ```
 
 Source files:
 
 main.md:
 
-```markdown file=test/examples/03/fixtures/main.md
+```markdown
 ## main header (depth 1)
 
 Text 1.
@@ -204,12 +198,11 @@ Text 3.
 ### header 4 (depth 2)
 
 Text 4.
-
 ```
 
 Remark output:
 
-```markdown file=test/examples/03/snapshots/output.md
+```markdown
 # main header (depth 1)
 
 Text 1.
@@ -225,7 +218,6 @@ Text 3.
 ## header 4 (depth 2)
 
 Text 4.
-
 ```
 
 ### Adjust top heading depth to H1
@@ -239,24 +231,31 @@ and help normalize the depth of the top-level heading.
 
 .remarkrc.mjs:
 
-```javascript file=test/examples/04/.remarkrc.mjs
+```javascript
+import remarkDirective from 'remark-directive';
 import {
   remarkAdjustTopHeadingToH1
 } from '@it-service-npm/remark-heading-adjustment';
+import { remarkIncludeCode } from '@it-service-npm/remark-include-code/async';
 
 export default {
   plugins: [
-    remarkAdjustTopHeadingToH1
+    remarkDirective,
+    remarkAdjustTopHeadingToH1,
+    [remarkIncludeCode, {
+      useEditorConfig: true,
+      trimFinalNewline: true,
+      trimExtraIndent: true
+    }],
   ]
 }
-
 ```
 
 Source files:
 
 main.md:
 
-```markdown file=test/examples/04/fixtures/main.md
+```markdown
 ## top level header
 
 Text 1.
@@ -272,12 +271,11 @@ Text 3.
 ### header 4
 
 Text 4.
-
 ```
 
 Remark output:
 
-```markdown file=test/examples/04/snapshots/output.md
+```markdown
 # top level header
 
 Text 1.
@@ -293,7 +291,6 @@ Text 3.
 ## header 4
 
 Text 4.
-
 ```
 
 ## API

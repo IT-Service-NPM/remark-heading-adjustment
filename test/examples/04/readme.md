@@ -9,14 +9,31 @@ and help normalize the depth of the top-level heading.
 
 .remarkrc.mjs:
 
-```javascript file=./.remarkrc.mjs
+```javascript
+import remarkDirective from 'remark-directive';
+import {
+  remarkAdjustTopHeadingToH1
+} from '@it-service-npm/remark-heading-adjustment';
+import { remarkIncludeCode } from '@it-service-npm/remark-include-code/async';
+
+export default {
+  plugins: [
+    remarkDirective,
+    remarkAdjustTopHeadingToH1,
+    [remarkIncludeCode, {
+      useEditorConfig: true,
+      trimFinalNewline: true,
+      trimExtraIndent: true
+    }],
+  ]
+}
 ```
 
 Source files:
 
 main.md:
 
-```markdown file=fixtures/main.md
+```markdown
 ## top level header
 
 Text 1.
@@ -32,10 +49,24 @@ Text 3.
 ### header 4
 
 Text 4.
-
 ```
 
 Remark output:
 
-```markdown file=snapshots/output.md
+```markdown
+# top level header
+
+Text 1.
+
+## header 2
+
+Text 2.
+
+### header 3
+
+Text 3.
+
+## header 4
+
+Text 4.
 ```

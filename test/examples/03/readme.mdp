@@ -1,0 +1,16 @@
+# Adjustment headings depth when `topHeadingDepth` specified in settings
+
+When `processor.data().topHeadingDepth` is not specified,
+this plugin accepts `topHeadingDepth` from settings.
+
+::include-code{file=./example.ts language=typescript}
+
+Source files:
+
+main.md:
+
+::include-code{file=fixtures/main.md language=markdown}
+
+Remark output:
+
+::include-code{file=snapshots/output.md language=markdown}

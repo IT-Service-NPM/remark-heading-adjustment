@@ -3,7 +3,7 @@
 When `processor.data().topHeadingDepth` is not specified,
 this plugin accepts `topHeadingDepth` from settings.
 
-```typescript file=./example.ts
+```typescript
 import { remark } from 'remark';
 import * as vFile from 'to-vfile';
 import {
@@ -29,7 +29,7 @@ Source files:
 
 main.md:
 
-```markdown file=fixtures/main.md
+```markdown
 ## main header (depth 1)
 
 Text 1.
@@ -49,7 +49,7 @@ Text 4.
 
 Remark output:
 
-```markdown file=snapshots/output.md
+```markdown
 # main header (depth 1)
 
 Text 1.

@@ -6,11 +6,8 @@
 	],
 	"references": [
 		{
-			"path": "./tsconfig.src.json",
-		},
-		// {
-		// 	"path": "./tsconfig.test.json"
-		// }
+			"path": "./tsconfig.src.json"
+		}
 	],
 	"compilerOptions": {
 		"noEmit": true,
@@ -37,13 +34,8 @@
 		"sourceMap": true,
 		"declaration": true,
 		"declarationMap": true,
-		"paths": {
-			"@it-service-npm/remark-heading-adjustment": [
-				"./dist"
-			],
-		},
 		"types": [
 			"node"
-		],
-	},
+		]
+	}
 }
