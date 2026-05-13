@@ -13,6 +13,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.3...v1.2.4) (2026-05-13)
+
+
+### Bug Fixes
+
+* add `remark-directive` ([ccd63d0](https://github.com/IT-Service-NPM/remark-heading-adjustment/commit/ccd63d0cf0ddac130695aa83b0c394b6312965af))
+
 ## [1.2.3](https://github.com/IT-Service-NPM/remark-heading-adjustment/compare/v1.2.2...v1.2.3) (2026-04-12)
 
 ### Bug Fixes
