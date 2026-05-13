@@ -1,4 +1,4 @@
-# Adjust top heading depth to H1
+# Adjusting top heading depth to H1
 
 The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
 This preset includes the `remarkHeadingsAdjustment` plugin
@@ -15,8 +15,8 @@ Source files:
 
 main.md:
 
-::include-code{file="fixtures/main.md" language="markdown"}
+::include-code{file="./fixtures/main.md" language="markdown"}
 
 Remark output:
 
-::include-code{file="snapshots/output.md" language="markdown"}
+::include-code{file="./snapshots/output.md" language="markdown"}

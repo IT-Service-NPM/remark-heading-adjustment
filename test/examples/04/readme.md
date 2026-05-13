@@ -1,4 +1,4 @@
-# Adjust top heading depth to H1
+# Adjusting top heading depth to H1
 
 The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
 This preset includes the `remarkHeadingsAdjustment` plugin

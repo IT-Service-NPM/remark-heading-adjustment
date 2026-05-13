@@ -67,7 +67,7 @@ the plugin remains inactive.
 - [Examples](#examples)
   - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
   - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
-  - [Adjust top heading depth to H1](#adjust-top-heading-depth-toh1)
+  - [Adjusting top heading depth to H1](#adjusting-top-heading-depth-toh1)
 - [API](#api)
 - [License](#license)
 
@@ -220,7 +220,7 @@ Text 3.
 Text 4.
 ```
 
-### Adjust top heading depth to H1
+### Adjusting top heading depth to H1
 
 The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
 This preset includes the `remarkHeadingsAdjustment` plugin
