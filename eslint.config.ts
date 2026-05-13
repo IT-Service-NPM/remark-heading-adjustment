@@ -54,13 +54,14 @@ export default defineConfig([
       'no-extend-native': 'error',
       'no-mixed-spaces-and-tabs': 'error',
       'no-trailing-spaces': 'error',
-      'no-unused-vars': 'warn',
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
       'no-use-before-define': ['error', 'nofunc'],
-      'object-curly-spacing': ['error', 'always'],
-      'quotes': ['error', 'single', 'avoid-escape'],
-      'semi': ['error', 'always'],
-      'keyword-spacing': ['error', { 'before': true, 'after': true }],
-      'space-unary-ops': 'error',
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/keyword-spacing': ['error', { 'before': true, 'after': true }],
+      '@stylistic/space-unary-ops': 'error',
       'unicorn/no-typeof-undefined': 'off',
       'unicorn/no-this-assignment': 'off',
       '@typescript-eslint/no-this-alias': 'off',
@@ -104,7 +105,8 @@ export default defineConfig([
       }],
       'n/no-missing-import': ['error', {
         'ignoreTypeImport': true
-      }]
+      }],
+      'tsdoc/syntax': 'error'
     },
   },
   {
