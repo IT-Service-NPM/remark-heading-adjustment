@@ -1,9 +1,9 @@
-# Adjustment headings depth when `topHeadingDepth` specified
+# Adjustment headings depth when `topHeadingDepth` specified
 
 `@it-service-npm/remark-heading-adjustment` can
 help to adjust headings depth in markdown document.
 
-When `processor.data().topHeadingDepth` is specified,
+When `processor.data().topHeadingDepth` is specified,
 this plugin adjusts all headings (by shifting them up or down) so
 that the depth of the top heading aligns with the given value.
 
@@ -67,5 +67,5 @@ Text 3.
 Text 4.
 ```
 
-Without additional `processor` or `file` data
+Without additional `processor` or `file` data
 this plugin does nothing.

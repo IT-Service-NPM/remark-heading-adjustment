@@ -54,19 +54,19 @@
 
 This Remark plugin helps to adjust headings depth in markdown file.
 
-When `processor.data().topHeadingDepth` is specified,
+When `processor.data().topHeadingDepth` is specified,
 this plugin adjusts all headings so
 that the depth of the top heading aligns with the given value.
 
-If `processor.data().topHeadingDepth` is not set,
+If `processor.data().topHeadingDepth` is not set,
 the plugin remains inactive.
 
 ## Contents
 
 - [Install](#install)
 - [Examples](#examples)
-  - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepth-specified)
-  - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-in-settings)
+  - [Adjustment headings depth when `topHeadingDepth` specified](#adjustment-headings-depthwhen-topheadingdepthspecified)
+  - [Adjustment headings depth when `topHeadingDepth` specified in settings](#adjustment-headings-depthwhen-topheadingdepth-specified-insettings)
   - [Adjusting top heading depth to H1](#adjusting-top-heading-depth-toh1)
 - [API](#api)
 - [License](#license)
@@ -79,12 +79,12 @@ npm install --save-dev @it-service-npm/remark-heading-adjustment
 
 ## Examples
 
-### Adjustment headings depth when `topHeadingDepth` specified
+### Adjustment headings depth when `topHeadingDepth` specified
 
 `@it-service-npm/remark-heading-adjustment` can
 help to adjust headings depth in markdown document.
 
-When `processor.data().topHeadingDepth` is specified,
+When `processor.data().topHeadingDepth` is specified,
 this plugin adjusts all headings (by shifting them up or down) so
 that the depth of the top heading aligns with the given value.
 
@@ -148,13 +148,13 @@ Text 3.
 Text 4.
 ```
 
-Without additional `processor` or `file` data
+Without additional `processor` or `file` data
 this plugin does nothing.
 
-### Adjustment headings depth when `topHeadingDepth` specified in settings
+### Adjustment headings depth when `topHeadingDepth` specified in settings
 
-When `processor.data().topHeadingDepth` is not specified,
-this plugin accepts `topHeadingDepth` from settings.
+When `processor.data().topHeadingDepth` is not specified,
+this plugin accepts `topHeadingDepth` from settings.
 
 ```typescript
 import { remark } from 'remark';
@@ -222,8 +222,8 @@ Text 4.
 
 ### Adjusting top heading depth to H1
 
-The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
-This preset includes the `remarkHeadingsAdjustment` plugin
+The plugin exports a preset called `remarkAdjustTopHeadingToH1`.
+This preset includes the `remarkHeadingsAdjustment` plugin
 with settings `{topHeadingDepth: 1}`.
 
 These are meant for use in .remarkrc files
@@ -295,8 +295,8 @@ Text 4.
 
 ## API
 
-Please, read the [API reference](/docs/index.md).
+Please, read the [API reference](/docs/index.md).
 
 ## License
 
-[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)
+[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)

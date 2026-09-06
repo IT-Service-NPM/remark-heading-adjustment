@@ -1,7 +1,7 @@
-# Adjustment headings depth when `topHeadingDepth` specified in settings
+# Adjustment headings depth when `topHeadingDepth` specified in settings
 
-When `processor.data().topHeadingDepth` is not specified,
-this plugin accepts `topHeadingDepth` from settings.
+When `processor.data().topHeadingDepth` is not specified,
+this plugin accepts `topHeadingDepth` from settings.
 
 ```typescript
 import { remark } from 'remark';
